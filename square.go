@@ -1,13 +1,22 @@
 package square
 
+type Point struct {
+	x, y int
+}
+
 type Square struct {
-	i int
+	start Point
+	a     uint
 }
 
-func (s *Square) Area() int {
-	return s.i * s.i
+//func (s *Square) End() Point {
+//	// implement me
+//}
+
+func (s *Square) Area() uint {
+	return s.a * s.a
 }
 
-func (s *Square) Perimetr() int {
-	return s.i * 4
+func (s *Square) Perimeter() uint {
+	return s.a * 4
 }
